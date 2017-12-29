@@ -14,12 +14,7 @@
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
-</head>
-
-<body>
-
-      <div class="row">
-        <script type="text/javascript">
+          <script type="text/javascript">
 baseUrl = "https://widgets.cryptocompare.com/";
 var scripts = document.getElementsByTagName("script");
 var embedder = scripts[ scripts.length - 1 ];
@@ -30,11 +25,19 @@ if(appName==""){appName="local";}
 var s = document.createElement("script");
 s.type = "text/javascript";
 s.async = true;
-var theUrl = baseUrl+'serve/v2/coin/header?fsyms=BTC,ETH,XRP,BCH&tsyms=USD,EUR,CNY,KRW';
+var theUrl = baseUrl+'serve/v2/coin/header?fsyms=BTC,ETH,XRP,BCH,DRGN&tsyms=USD,EUR,CNY,KRW';
 s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
 embedder.parentNode.appendChild(s);
 })();
 </script>
+  
+  
+</head>
+
+<body>
+
+      <div class="row">
+
   </div>
   
   
